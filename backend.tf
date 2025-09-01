@@ -1,8 +1,8 @@
 terraform {
   backend "azurerm" {
-    resource_group_name  = var.resource_group_name
-    storage_account_name = var.storage_account_name
-    container_name       = "tfstate"
-    key                  = var.state_file_name
+    resource_group_name  = "<REPLACE_WITH_RESOURCE_GROUP_NAME>"
+    storage_account_name = "<REPLACE_WITH_STORAGE_ACCOUNT_NAME>"
+    container_name       = "<REPLACE_WITH_CONTAINER_NAME>"
+    key                  = "<REPLACE_WITH_STATE_FILE_NAME>"
   }
 }
